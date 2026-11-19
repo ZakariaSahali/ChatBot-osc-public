@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OSC Assistant - Open Source Club</title>
+  <link rel="icon" href="/static/logo.png">
+  <link rel="stylesheet" href="/static/style.css">
+  <!-- Markdown parser for rich text links and formatting -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div class="app">
+    <!-- Header -->
+    <header class="top">
+      <div class="brand-group">
+        <img class="mark" src="/static/logo.png" alt="OSC Logo">
+        <div class="brand">
+          <span class="brand-name">OPEN SOURCE</span>
+          <span class="brand-sub">CLUB</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <div class="status-badge" title="Assistant is online and ready">
+          <span class="status-dot"></span>
+          <span class="status-text">Online</span>
+        </div>
+        <button id="clear-btn" class="icon-btn" title="Clear chat conversation" aria-label="Clear chat">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="3 6 5 6 21 6"></polyline>
+            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Message log / Chat stream -->
+    <main id="log" aria-live="polite">
+      <!-- Welcome Hero Banner -->
+      <div id="welcome-card" class="welcome-card">
+        <div class="welcome-icon">
+          <img src="/static/logo.png" alt="OSC Logo" class="welcome-logo">
+        </div>
+        <h2>Welcome to OSC Assistant</h2>
+        <p>Ask anything about the Open Source Club of University Algiers 1, including events, courses, mentorship, or how to join.</p>
+        <div class="quick-prompts">
+          <button type="button" class="chip" data-prompt="How do I join the Open Source Club?">🚀 How to join?</button>
+          <button type="button" class="chip" data-prompt="What upcoming events and workshops are organized?">📅 Upcoming events</button>
+          <button type="button" class="chip" data-prompt="What courses and learning tracks do you offer?">💻 Available courses</button>
+          <button type="button" class="chip" data-prompt="Who is on the club board and executive team?">👥 Executive team</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Chat input form -->
+    <footer class="footer-container">
+      <form id="f">
+        <div class="input-wrapper">
+          <textarea 
+            id="q" 
+            placeholder="Ask about the club... (Enter to send, Shift+Enter for newline)" 
+            rows="1" 
+            autocomplete="off" 
+            required
+          ></textarea>
+        </div>
+        <button id="send" type="submit" aria-label="Send message" title="Send">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+      </form>
+      <div class="disclaimer">
+        OSC Chatbot can make mistakes. Verify important dates & info with the club team.
+      </div>
+    </footer>
+  </div>
+  <script src="/static/script.js"></script>
+</body>
+</html>

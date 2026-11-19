@@ -1,0 +1,49 @@
+## Courses & workshops
+
+### Cybersecurity fundamentals
+
+Network security basics, common vulnerabilities, and hands-on CTF style challenges.
+
+Topics: Linux, Networking, CTF
+
+### Frontend foundations
+
+HTML, CSS, and JavaScript fundamentals — build and style your first interactive page.
+
+Topics: HTML, CSS, JS
+
+### Backend with Node.js
+
+Build REST APIs with Node and Express, connect a database, handle auth.
+
+Topics: Node.js, Express
+
+### React in practice
+
+Components, hooks, and state management — build a real single-page app.
+
+Topics: React, JSX, Hooks
+
+### UI/UX design
+
+Wireframes, prototyping, and design systems — go from idea to clickable mockup.
+
+Topics: Figma
+
+### Machine learning basics
+
+Supervised learning, model training, and evaluation using real datasets.
+
+Topics: Python, base
+
+### Git & GitHub essentials
+
+Version control basics, branching, pull requests, and contributing to open-source.
+
+Topics: Git, GitHub
+
+### Deep learning workshop
+
+Neural networks, backpropagation, and hands-on training with TensorFlow.
+
+Topics: TensorFlow, Gradient Descent
